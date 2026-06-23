@@ -1,0 +1,315 @@
+/* ===========================================
+   REGISTER PAGE
+   Event Management System
+=========================================== */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+    min-height:100vh;
+}
+
+/* ===========================
+   REGISTER SECTION
+=========================== */
+
+.register-section{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+
+}
+
+/* ===========================
+   REGISTER CARD
+=========================== */
+
+.register-container{
+
+    width:100%;
+    max-width:700px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.register-container h2{
+
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+    font-size:32px;
+
+}
+
+.register-container p{
+
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   INPUT GROUP
+=========================== */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group textarea{
+
+    resize:vertical;
+
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 5px rgba(37,99,235,.4);
+
+}
+
+/* ===========================
+   FILE INPUT
+=========================== */
+
+input[type="file"]{
+
+    padding:10px;
+
+}
+
+/* ===========================
+   TERMS
+=========================== */
+
+.terms{
+
+    margin:20px 0;
+
+    font-size:15px;
+
+}
+
+.terms label{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.register-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.register-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   LOGIN LINK
+=========================== */
+
+.login-link{
+
+    margin-top:25px;
+
+    text-align:center;
+
+}
+
+.login-link a{
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+.login-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   ERROR
+=========================== */
+
+.error{
+
+    color:red;
+
+    font-size:13px;
+
+    margin-top:5px;
+
+}
+
+/* ===========================
+   SUCCESS INPUT
+=========================== */
+
+.input-success{
+
+    border:2px solid green !important;
+
+}
+
+/* ===========================
+   ERROR INPUT
+=========================== */
+
+.input-error{
+
+    border:2px solid red !important;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.register-container{
+
+    padding:30px;
+
+}
+
+.register-container h2{
+
+    font-size:28px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.register-container{
+
+    padding:20px;
+
+}
+
+.register-container h2{
+
+    font-size:24px;
+
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    padding:12px;
+
+}
+
+.register-btn{
+
+    padding:13px;
+
+}
+
+}

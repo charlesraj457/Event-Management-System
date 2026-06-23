@@ -1,0 +1,294 @@
+/* ==========================================
+   MY BOOKINGS PAGE
+   Event Management System
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f7fb;
+
+    color:#333;
+
+}
+
+/* ===============================
+   PAGE HEADER
+================================ */
+
+.booking-header{
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.booking-header h1{
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+.booking-header p{
+
+    font-size:18px;
+
+}
+
+/* ===============================
+   BOOKING LIST
+================================ */
+
+.booking-list{
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+#bookingContainer{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+}
+
+/* ===============================
+   BOOKING CARD
+================================ */
+
+.booking-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.booking-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.booking-card h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.booking-card p{
+
+    margin:10px 0;
+
+    color:#555;
+
+}
+
+.booking-card strong{
+
+    color:#111827;
+
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.booking-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.download-btn{
+
+    flex:1;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    text-align:center;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.cancel-btn{
+
+    flex:1;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ===============================
+   EMPTY STATE
+================================ */
+
+.empty-state{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.empty-state img{
+
+    width:250px;
+
+    max-width:100%;
+
+    margin-bottom:20px;
+
+}
+
+.empty-state h2{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.empty-state p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.browse-btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.browse-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media(max-width:768px){
+
+.booking-header h1{
+
+    font-size:30px;
+
+}
+
+.booking-buttons{
+
+    flex-direction:column;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.booking-header{
+
+    padding:40px 15px;
+
+}
+
+.booking-header h1{
+
+    font-size:24px;
+
+}
+
+.booking-card{
+
+    padding:20px;
+
+}
+
+.empty-state img{
+
+    width:180px;
+
+}
+
+}

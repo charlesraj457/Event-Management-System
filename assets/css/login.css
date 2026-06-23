@@ -1,0 +1,385 @@
+/* ============================================
+   LOGIN PAGE STYLES
+   File : login.css
+   Project : Event Management System
+===============================================*/
+
+/* Body Background */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    min-height:100vh;
+}
+
+/* ===========================
+   LOGIN SECTION
+=========================== */
+
+.login-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:85vh;
+    padding:40px 20px;
+}
+
+/* ===========================
+   LOGIN CARD
+=========================== */
+
+.login-container{
+
+    width:100%;
+    max-width:450px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+    animation:fadeIn .8s ease;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.login-container h2{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+}
+
+.login-container p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 5px rgba(37,99,235,.4);
+
+}
+
+/* ===========================
+   PASSWORD CONTAINER
+=========================== */
+
+.password-container{
+
+    position:relative;
+
+}
+
+.password-container input{
+
+    padding-right:50px;
+
+}
+
+.toggle-password{
+
+    position:absolute;
+
+    top:50%;
+
+    right:15px;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    color:#555;
+
+    user-select:none;
+
+}
+
+/* ===========================
+   REMEMBER SECTION
+=========================== */
+
+.remember{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.remember a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+}
+
+.remember a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   LOGIN BUTTON
+=========================== */
+
+.login-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   REGISTER LINK
+=========================== */
+
+.register-link{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.register-link a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.register-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   ERROR MESSAGE
+=========================== */
+
+.error{
+
+    color:red;
+
+    font-size:13px;
+
+    margin-top:5px;
+
+}
+
+/* ===========================
+   SUCCESS MESSAGE
+=========================== */
+
+.success{
+
+    color:green;
+
+    font-size:14px;
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+/* ===========================
+   INPUT VALIDATION
+=========================== */
+
+.input-success{
+
+    border:2px solid green !important;
+
+}
+
+.input-error{
+
+    border:2px solid red !important;
+
+}
+
+/* ===========================
+   LOADING BUTTON
+=========================== */
+
+.loading{
+
+    opacity:.7;
+
+    cursor:not-allowed;
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.login-container{
+
+    padding:30px;
+
+}
+
+.login-container h2{
+
+    font-size:28px;
+
+}
+
+.login-btn{
+
+    font-size:16px;
+
+}
+
+}
+
+/* ===========================
+   SMALL DEVICES
+=========================== */
+
+@media(max-width:480px){
+
+.login-container{
+
+    padding:20px;
+
+}
+
+.login-container h2{
+
+    font-size:24px;
+
+}
+
+.input-group input{
+
+    padding:12px;
+
+}
+
+.login-btn{
+
+    padding:13px;
+
+}
+
+}

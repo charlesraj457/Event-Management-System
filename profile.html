@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | EventHub</title>
+
+<link rel="stylesheet"
+href="assets/css/style.css">
+
+<link rel="stylesheet"
+href="assets/css/profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+EventHub
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="events.html">Events</a></li>
+
+<li><a href="my-bookings.html">My Bookings</a></li>
+
+<li><a href="profile.html" class="active">Profile</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= PROFILE ================= -->
+
+<section class="profile-section">
+
+<div class="profile-card">
+
+<h1>
+
+My Profile
+
+</h1>
+
+<div class="profile-image">
+
+<img
+src="assets/images/profile.png"
+id="profilePreview"
+alt="Profile">
+
+<input
+type="file"
+id="profileImage"
+accept="image/*">
+
+</div>
+
+<form id="profileForm">
+
+<div class="input-group">
+
+<label>
+
+Full Name
+
+</label>
+
+<input
+type="text"
+id="fullName"
+placeholder="Enter Full Name">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Email
+
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Phone Number
+
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter Phone Number">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Address
+
+</label>
+
+<textarea
+id="address"
+rows="4"
+placeholder="Enter Address"></textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+New Password
+
+</label>
+
+<input
+type="password"
+id="password"
+placeholder="Change Password">
+
+</div>
+
+<div class="button-group">
+
+<button
+type="submit"
+class="save-btn">
+
+Save Changes
+
+</button>
+
+<button
+type="button"
+class="logout-btn"
+id="logoutBtn">
+
+Logout
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 EventHub |
+All Rights Reserved
+
+</p>
+
+</footer>
+
+<script src="assets/js/profile.js"></script>
+
+</body>
+
+</html>
